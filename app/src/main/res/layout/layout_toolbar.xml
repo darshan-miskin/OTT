@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:clipToPadding="false"
+        app:contentInsetStart="0dp"
+        android:elevation="4dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:animateLayoutChanges="true"
+            android:background="@drawable/nav_bar">
+
+            <ImageView
+                android:id="@+id/btn_back"
+                android:layout_width="?actionBarSize"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:padding="@dimen/toolbar_icon_padding"
+                android:src="@drawable/back"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/title" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/toolbar_text_size"
+                android:visibility="gone"
+                app:layout_constraintLeft_toRightOf="@id/btn_back"
+                app:layout_constraintRight_toLeftOf="@id/btn_search"
+                tools:text="Toolbar text title" />
+
+            <ImageView
+                android:id="@+id/btn_search"
+                android:layout_width="?actionBarSize"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:padding="@dimen/toolbar_icon_padding"
+                android:src="@drawable/search"
+                android:visibility="gone"
+                app:layout_constraintLeft_toRightOf="@id/title"
+                app:layout_constraintRight_toRightOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/etv_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:backgroundTint="@color/white"
+                android:gravity="center_vertical"
+                android:includeFontPadding="false"
+                android:hint="@string/enter_three_or_more_characters"
+                android:maxLines="1"
+                android:paddingStart="4dp"
+                android:paddingTop="0dp"
+                android:paddingEnd="?actionBarSize"
+                android:paddingBottom="0dp"
+                android:singleLine="true"
+                android:textSize="@dimen/toolbar_text_size"
+                app:layout_constraintLeft_toRightOf="@id/btn_search"
+                tools:text="search query" />
+
+            <ImageView
+                android:id="@+id/btn_cancel"
+                android:layout_width="?actionBarSize"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:padding="@dimen/toolbar_icon_padding"
+                android:src="@drawable/search_cancel"
+                app:layout_constraintRight_toRightOf="@id/etv_search" />
+
+            <androidx.constraintlayout.widget.Group
+                android:id="@+id/group_toolbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                app:constraint_referenced_ids="btn_back, title, btn_search" />
+
+            <androidx.constraintlayout.widget.Group
+                android:id="@+id/group_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:constraint_referenced_ids="btn_cancel, etv_search" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+</layout>

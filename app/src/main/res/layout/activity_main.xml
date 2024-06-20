@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="toolbarState"
+            type="androidx.lifecycle.MutableLiveData" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".screens.home.presentation.MainActivity"
+        android:animateLayoutChanges="true">
+
+        <include android:id="@+id/include_toolbar"
+            layout="@layout/layout_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.progressindicator.LinearProgressIndicator
+            android:id="@+id/pb_items_loading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:spanCount="@integer/span_count"
+            android:visibility="gone"
+            tools:listitem="@layout/layout_recycler_item"
+            tools:itemCount="20"
+            android:paddingTop="?actionBarSize"/>
+
+        <TextView
+            android:id="@+id/tv_empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@android:color/darker_gray"
+            android:visibility="gone"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:text="@string/no_results"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

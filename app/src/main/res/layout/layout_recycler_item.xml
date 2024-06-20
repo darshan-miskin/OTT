@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="content"
+            type="com.example.ott.screens.home.domain.response.Content" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_frame"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            tools:src="@tools:sample/avatars"
+            android:scaleType="centerCrop"
+            setDrawable="@{content.posterImage}"
+            app:layout_constraintDimensionRatio="2:3"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="@tools:sample/lorem/random"
+            android:text="@{content.name}"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textSize="18sp"
+            android:padding="4dp"
+            android:gravity="center_horizontal"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintLeft_toLeftOf="@id/iv_frame"
+            app:layout_constraintRight_toRightOf="@id/iv_frame"
+            app:layout_constraintTop_toBottomOf="@id/iv_frame"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

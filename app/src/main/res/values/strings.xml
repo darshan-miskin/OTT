@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">OTT</string>
+    <string name="no_results">No Results. \n Try changing the search query</string>
+    <string name="enter_three_or_more_characters">Enter three or more characters</string>
+</resources>
