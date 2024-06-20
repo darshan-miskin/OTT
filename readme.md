@@ -2,6 +2,7 @@
 Sample App containing a list of ott content with search functionality
 
 ## Screen Shots ##
+<img src="https://raw.githubusercontent.com/darshan-miskin/storage/master/Screenshot_20240620-113041.png" width="250" height="500"> <img src="https://raw.githubusercontent.com/darshan-miskin/storage/master/Screenshot_20240620-113049.png" width="250" height="500"> <img src="https://raw.githubusercontent.com/darshan-miskin/storage/master/Screenshot_20240620-113109.png" width="250" height="500"> <img src="https://raw.githubusercontent.com/darshan-miskin/storage/master/Screenshot_20240620-113135.png" width="500" height="250"> <img src="https://raw.githubusercontent.com/darshan-miskin/storage/master/Screenshot_20240620-113351.png" width="250" height="500">
 
 ## Build info ##
 * Android Studio - 2024.1.1
@@ -20,5 +21,6 @@ Sample App containing a list of ott content with search functionality
 * <a href="https://developer.android.com/training/data-storage/room">Room Database</a>
 
 ## Package Structure ##
+<img src="https://raw.githubusercontent.com/darshan-miskin/storage/master/package_structure.PNG">
 
 ## Architecture ##
