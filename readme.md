@@ -21,6 +21,6 @@ Sample App containing a list of ott content with search functionality
 * <a href="https://developer.android.com/training/data-storage/room">Room Database</a>
 
 ## Package Structure ##
-![https://raw.githubusercontent.com/darshan-miskin/storage/master/package_structure.PNG]
+<img src="https://raw.githubusercontent.com/darshan-miskin/storage/master/package_structure.PNG">
 
 ## Architecture ##
