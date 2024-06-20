@@ -22,5 +22,3 @@ Sample App containing a list of ott content with search functionality
 
 ## Package Structure ##
 <img src="https://raw.githubusercontent.com/darshan-miskin/storage/master/package_structure.PNG">
-
-## Architecture ##
