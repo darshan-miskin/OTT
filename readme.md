@@ -2,7 +2,7 @@
 Sample App containing a list of ott content with search functionality
 
 ## Screen Shots ##
-![](https://raw.githubusercontent.com/darshan-miskin/storage/master/Screenshot_20240620-113041.png)
+![](https://raw.githubusercontent.com/darshan-miskin/storage/master/Screenshot_20240620-113041.png&v=500&s=250)
 ![](https://raw.githubusercontent.com/darshan-miskin/storage/master/Screenshot_20240620-113049.png)
 ![https://raw.githubusercontent.com/darshan-miskin/storage/master/Screenshot_20240620-113109.png]
 ![https://raw.githubusercontent.com/darshan-miskin/storage/master/Screenshot_20240620-113135.png]
