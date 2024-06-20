@@ -2,7 +2,7 @@
 Sample App containing a list of ott content with search functionality
 
 ## Screen Shots ##
-![alt text]([https://github.com/darshan-miskin/PinView-Android/blob/master/imgs/GIF_1559495949954.gif?&v=1024&s=576](https://raw.githubusercontent.com/darshan-miskin/storage/master/Screenshot_20240620-113041.png))
+![](https://github.com/darshan-miskin/PinView-Android/blob/master/imgs/GIF_1559495949954.gif?&v=1024&s=576](https://raw.githubusercontent.com/darshan-miskin/storage/master/Screenshot_20240620-113041.png)
 ![https://raw.githubusercontent.com/darshan-miskin/storage/master/Screenshot_20240620-113049.png]
 ![https://raw.githubusercontent.com/darshan-miskin/storage/master/Screenshot_20240620-113109.png]
 ![https://raw.githubusercontent.com/darshan-miskin/storage/master/Screenshot_20240620-113135.png]
